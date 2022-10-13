@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -24,6 +26,7 @@ img {
 
 body {
     height: 100vh;
+    font-family: 'Noto Serif', serif;
 }
 
 #content {
@@ -38,8 +41,8 @@ body {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
-    background: center black no-repeat url('./home-background.jpg');
+    opacity: 0.4;
+    background: center black url('./home-background.jpg');
 }
 
 .home {
@@ -52,44 +55,57 @@ body {
     text-align: center;
 }
 
+.home h2,
+.nav h1,
+.home p {
+    color: #D99379;
+}
+
 .home h2 {
     position: relative;
-    color: #D99379;
-    font-size: 50px;
+    font-size: 3rem;
     text-shadow: 2px 2px 2px #000000;
 }
 
 .home p {
     position: relative;
-    color: #D99379;
-    font-size: 35px;
+    font-size: 2rem;
     text-shadow: 2px 2px 2px #000000;
 }
 
 .nav {
     z-index: 2;
-    opacity: 0.5;
+    opacity: 1;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     height: 75px;
-    background-color: #1C1D26;
+    background-color: #1c1d2663;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav h1 {
-    color: #D99379;
     margin-left: 100px;
+    font-weight: bold;
+}
+
+.home p .significant {
+    color: #728C14;
+    font-size: 1.1em;
 }
 
 .nav a {
     text-decoration: none;
     color: #D99379;
     font-size: 1.5rem;
+}
+
+.nav a:hover {
+    color: #728C14;
 }
 
 .nav .links {
