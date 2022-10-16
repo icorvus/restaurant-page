@@ -1,9 +1,12 @@
 const load = () => {
+    const content = document.querySelector('#content');
     const home = document.createElement('div');
     const header = document.createElement('h2');
     const p1 = document.createElement('p');
     const p2 = document.createElement('p');
 
+    content.classList.remove('normal-bg');
+    content.classList.add('black-bg');
     home.classList.add('home');
     home.classList.add('tab')
     header.textContent = 'STEAKHOUSE IN WARSAW';

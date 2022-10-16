@@ -31,7 +31,14 @@ body {
 
 #content {
     height: 100%;
+}
+
+.black-bg {
     background-color: black;
+}
+
+.normal-bg {
+    background-color: #1c1d26;
 }
 
 .home::before {

@@ -1,4 +1,5 @@
 import { load as loadHome } from './home.js';
+import { load as loadMenu } from './menu.js';
 
 const content = document.querySelector('#content');
 const navBar = document.createElement('div');
@@ -28,7 +29,7 @@ loadHome();
 
 const wipeContent = () => {
     const tab = document.querySelector('.tab');
-    tab.remove();
+    if (tab) tab.remove();
 }
 
 homeLink.addEventListener('click', () => {
@@ -38,10 +39,9 @@ homeLink.addEventListener('click', () => {
 
 menuLink.addEventListener('click', () => {
     wipeContent();
-    loadHome();
+    loadMenu();
 })
 
 contactLink.addEventListener('click', () => {
     wipeContent();
-    loadHome();
 })
