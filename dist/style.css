@@ -113,3 +113,26 @@ body {
     gap: 50px;
     margin-right: 100px;
 }
+
+@media (max-width: 1000px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+    }
+
+    .nav h1,
+    .nav .links {
+        margin: 0;
+    }
+    
+    .home {
+        padding: 20px;
+    }
+}
